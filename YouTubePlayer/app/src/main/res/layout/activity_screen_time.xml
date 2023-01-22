@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenTime"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ScrnTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch Time"
+        android:textColor="@color/OffWhite"
+        android:textSize="34sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        android:layout_marginLeft="12dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/timeclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="00:00"
+        android:textColor="@color/Blue"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ScrnTimeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/ResetBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/timeclock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/darkBlue"
+        android:text="Reset"
+        android:textSize="24sp"
+        android:textColor="@color/OffWhite"
+        android:onClick="resetTapped">
+
+    </Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
